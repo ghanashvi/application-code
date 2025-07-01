@@ -5,8 +5,7 @@ FROM python:3.12-slim
 WORKDIR /app
 COPY . .
 
-# 3. (Optional) install dependencies if you add a requirements.txt later
 # RUN pip install --no-cache-dir -r requirements.txt
-EXPOSE 8080
+EXPOSE 8081
 # 4. Run the script
 CMD ["python", "main.py"]
