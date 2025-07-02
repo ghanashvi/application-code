@@ -4,4 +4,4 @@ FROM us-central1-docker.pkg.dev/axial-edition-463510-p5/quarantine-repo/applicat
 # Copy files from second image
 COPY --from=image2 /custom-files /app
 
-CMD ["cat", "/app/hello.txt"]
+CMD ["cat", "/app/custom-files.txt"]
