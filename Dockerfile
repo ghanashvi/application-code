@@ -6,6 +6,6 @@ WORKDIR /app
 COPY . .
 
 # RUN pip install --no-cache-dir -r requirements.txt
-EXPOSE 8080
+EXPOSE 8081
 # 4. Run the script
 CMD ["python", "main.py"]
