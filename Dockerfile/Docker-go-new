@@ -11,6 +11,5 @@ RUN go build -ldflags="-s -w" -o hello hello.go
 FROM gcr.io/distroless/static-debian12
 
 
-
 COPY --from=builder /app/hello /hello
 ENTRYPOINT ["/hello"]
