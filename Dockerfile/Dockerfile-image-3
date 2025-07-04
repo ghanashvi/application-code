@@ -4,5 +4,4 @@ FROM us-central1-docker.pkg.dev/axial-edition-463510-p5/quarantine-repo/applicat
 # Copy files from second image
 COPY --from=us-central1-docker.pkg.dev/axial-edition-463510-p5/quarantine-repo/application-code-image-2:insecure-2625c3d60db3a570cd869c2e44800a9d44d70ce7  /custom-files /app
 
-
 CMD ["cat", "/app/custom-files.txt"]
